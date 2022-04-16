@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ .title }} - massaverse.io / beta</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="/icon.png?v=1">
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+
+    <link rel="stylesheet" href="/vendors/bulma/bulma.min.css">
+    <link rel="stylesheet" href="/vendors/bulma-badge.min.css">
+    <link rel="stylesheet" href="/vendors/bulma/bulma-tooltip.min.css">
+
+    <link rel="stylesheet" href="/css/main.css?v=newway">
+
+    <script src="/vendors/jquery.min.js"></script>
+</head>
+
+<body class="has-background-white-bis has-navbar-fixed-top">
+
+    <nav id="navbar" class="navbar is-fixed-top has-shadow  navbar-spaced">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="button has-badge-rounded has-badge-info has-badge-outlined" data-badge="NEW" href="/"
+                    id="logo">
+                    <span>
+                        MASSAVERSE
+                    </span>
+                </a>
+
+                <div id="navbarBurger" class="navbar-burger burger" data-target="navMenu" aria-label="menu"
+                    aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/about">
+                        About
+                    </a>
+                    <a class="navbar-item" href="/terms">
+                        Terms
+                    </a> 
+                </div>
+            </div>
+
+            {{ if not .hideSmallSearch }}
+            <div class="navbar-end">
+                <form action="/search" method="GET">
+                    <div class="navbar-item">
+                        <div class="field has-addons">
+                            <div class="control is-expanded">
+                                <input id="search_q" class="input" type="text" placeholder="Enter massa address"
+                                    name="q" value="{{.q}}" size="25" autocomplete="off" required>
+                            </div>
+                            <div class="control">
+                                <button class="button is-info" type="submit">
+                                    Get Icon
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            {{ end }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1857481369576612",
+    enable_page_level_ads: true
+  });
+</script>
+        </div>
+        </div>
+    </nav>
+    <div id="space-delimiter" class=""><br /></div>
+
+    {{template "content" .}}
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".navbar-burger").click(function () {
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    </script>
+</body>
+
+</html>

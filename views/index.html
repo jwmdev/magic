@@ -1,0 +1,20 @@
+{{define "content"}}
+<section class="hero is-fullheight">
+  <form action="/search" method="GET">
+    <div class="container">
+      <div class="field has-addons ">
+        <div class="control is-expanded">
+          <input id="search_q" class="input" type="text" placeholder="Enter massa address" name="q" value="{{.q}}"
+            autocomplete="off" required>
+          </span>
+        </div>
+        <div class="control">
+          <button class="button is-info" type="submit">
+            Get Icon
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+{{end}}
