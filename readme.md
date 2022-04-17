@@ -2,10 +2,10 @@
 Massa Blockchain Address Icon Generator (MAGIC) is a tool for generating beutiful massa addresses. The tool can be accessess through the web interface or using api.
 
 ## Applications
-Icons from MAGIC can be used in mobile app and web app, e.g massa explore, to make the app more appealing. The icon for a given address can be obtained through an api avaiable at [massaverse](https://massaverse.io/api/v1/icon/) by passing massaverse address: e.g for [example](https://massavers.io/api/icon/2gPcd4dxnYXoEucyLGwsNEubC7wR8nogDpFBktuWgr4KTWNxBy)
+Icons from MAGIC can be used in mobile app and web app, e.g massa explore, to make the app more appealing. The icon for a given address can be obtained through an api avaiable at [massaverse](https://massaverse.io/api/v1/icon/) by passing massaverse address: e.g for [example](https://massaverse.io/api/v1/icon/2gPcd4dxnYXoEucyLGwsNEubC7wR8nogDpFBktuWgr4KTWNxBy)
 
 The sample icon is shown below:
-![icon](https://massavers.io/api/icon/2gPcd4dxnYXoEucyLGwsNEubC7wR8nogDpFBktuWgr4KTWNxBy)
+![icon](https://massaverse.io/api/v1/icon/2gPcd4dxnYXoEucyLGwsNEubC7wR8nogDpFBktuWgr4KTWNxBy)
 
 
 MAGIC will be integrated into [Massaverse](https://github.com/jwmdev/massaverse)
