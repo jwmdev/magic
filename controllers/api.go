@@ -12,7 +12,7 @@ import (
 func Magic(c echo.Context) error {
 	ai := c.Param("ai")
 
-	path := fmt.Sprintf("%s%s.png", baseIconPath, ai)
+	path := fmt.Sprintf("%s%s.svg", baseIconPath, ai)
 	pp.Printf("path: %v\n", path)
 
 	if _, err := os.Stat(path); err != nil {

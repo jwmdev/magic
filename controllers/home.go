@@ -26,3 +26,6 @@ func Terms(c echo.Context) error {
 		"title": "Terms, Conditions and Privancy Policy",
 	})
 }
+func Gant(c echo.Context) error {
+	return c.Render(http.StatusOK, "gant.html", nil)
+}

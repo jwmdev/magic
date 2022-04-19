@@ -19,5 +19,4 @@ The icon generation engine is developed using [Dart](https://dart.dev/). The web
 - [Testnet: Massa testnet](https://massa.net/testnet)
 - [Massa Github: Massa official github repository](https://github.com/massalabs)
 - [Massa API: Massa official api documentation](https://github.com/massalabs/massa/wiki/api)
-- [Images: Unsplash (various artists - special thanks to all great artists) ](https://https://unsplash.com)
 

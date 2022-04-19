@@ -10,6 +10,7 @@ import (
 func WebRouters(app *echo.Echo) {
 	app.GET("/", controllers.Home)
 	app.GET("/about", controllers.About)
+	app.GET("/gant", controllers.Gant)
 	app.GET("/terms", controllers.Terms)
 	app.GET("/search", controllers.Search) //search
 	app.GET("/icon/:ai", controllers.Icon)

@@ -15,7 +15,7 @@ const baseIconPath = ".storage/images/icons/"
 func Icon(c echo.Context) error {
 	ai := c.Param("ai")
 
-	path := fmt.Sprintf("%s%s.png", baseIconPath, ai)
+	path := fmt.Sprintf("%s%s.svg", baseIconPath, ai)
 	pp.Printf("path: %v\n", path)
 
 	if _, err := os.Stat(path); err != nil {
@@ -33,7 +33,7 @@ func Icon(c echo.Context) error {
 
 	data := echo.Map{
 		"title":   c.Get("Massaverse address icon"),
-		"icon":    fmt.Sprintf("%s.png", ai),
+		"icon":    fmt.Sprintf("%s.svg", ai),
 		"address": ai,
 	}
 	return c.Render(http.StatusOK, "icon", data)
